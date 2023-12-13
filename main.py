@@ -44,6 +44,6 @@ if change_in_value >= 5 or change_in_value <= -1:
   with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
     connection.login(user=MY_EMAIL, password=PASSWORD)
-    connection.sendmail(from_addr=MY_EMAIL, to_addrs=TO_EMAIL, msg=f"Subject: Tesla stock {result} by ♥️ {change_in_value}%\n\n{STOCK} is {result} by {change_in_value}\n\nThese are the sources\n\n\nHEADLINE: {news_list[0]['title']}\nDESCRIPRION: {news_list[0]['description']}\nURL: {news_list[0]['url']}\n\nHEADLINE: {news_list[1]['title']}\nDESCRIPRION: {news_list[1]['description']}\nURL: {news_list[1]['url']}\n\nHEADLINE: {news_list[2]['title']}\nDESCRIPRION: {news_list[2]['description']}\nURL: {news_list[2]['url']}\n\n".encode('utf-8'))
+    connection.sendmail(from_addr=MY_EMAIL, to_addrs=TO_EMAIL, msg=f"Subject: Tesla stock {result} by {change_in_value}%\n\n{STOCK} is {result} by {change_in_value}\n\nThese are the sources\n\n\nHEADLINE: {news_list[0]['title']}\nDESCRIPRION: {news_list[0]['description']}\nURL: {news_list[0]['url']}\n\nHEADLINE: {news_list[1]['title']}\nDESCRIPRION: {news_list[1]['description']}\nURL: {news_list[1]['url']}\n\nHEADLINE: {news_list[2]['title']}\nDESCRIPRION: {news_list[2]['description']}\nURL: {news_list[2]['url']}\n\n".encode('utf-8'))
     
     
