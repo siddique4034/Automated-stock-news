@@ -13,6 +13,7 @@ news_list = []
 STOCK_KEY= "Z25O8SZJIJ0N5BZV"
 result = "increased 🔺"
 
+
 today = datetime.now()
 today_date = f"{today}".split()[0]
 last_30_days = f"{today - timedelta(days=30)}".split()[0]
