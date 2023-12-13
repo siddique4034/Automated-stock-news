@@ -33,7 +33,7 @@ change_in_value = (yesterday_value - last_yesterday_value) * 100 / last_yesterda
 if change_in_value < 0: 
   result = "decreased 🔻"
 
-if change_in_value >= 5 or change_in_value <= -1:
+if change_in_value >= 5 or change_in_value <= -5:
   news_response = requests.get(f"https://newsapi.org/v2/everything?q={COMPANY_NAME}&from={today_date}&to={last_30_days}&sortBy=popularity&apiKey={NEWS_KEY}")
 
   news = news_response.json()
