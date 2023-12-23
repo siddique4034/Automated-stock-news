@@ -9,9 +9,9 @@ PASSWORD = os.environ["PASSWORD"]
 TO_EMAIL = "siddiquemd4034@gmail.com"
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
-NEWS_KEY = "706e66e93c234d6aa47eac5d37e22df5"
+NEWS_KEY = os.environ["NEWS_KEY"]
 news_list = []
-STOCK_KEY= "Z25O8SZJIJ0N5BZV"
+STOCK_KEY= os.environ["STOCK_KEY"]
 result = "increased 🔺"
 
 
