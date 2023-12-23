@@ -1,10 +1,11 @@
 import requests
 from datetime import datetime, timedelta
 import smtplib
+import os
 
 
 MY_EMAIL = "mdsiddiquerain@gmail.com"
-PASSWORD = "dykytphasnylvqhx"
+PASSWORD = os.environ["PASSWORD"]
 TO_EMAIL = "siddiquemd4034@gmail.com"
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
